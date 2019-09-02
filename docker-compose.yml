@@ -1,0 +1,10 @@
+version: '3'
+services:
+  front:
+    build: "ui/"
+    ports:
+      - "5000:80"
+  back:
+    build: .
+    ports:
+      - "8080:8080"
